@@ -1,0 +1,14 @@
+# ttl-probe
+
+> Minimal traceroute implementation in C++ using raw ICMP sockets: sends echo requests with increasing TTL and reports which hop replies "time exceeded" at each step.
+
+Written for Windows, built with CMake and MSVC.
+
+## Docs
+
+- [README](https://github.com/ImSavsis/ttl-probe/blob/master/README.md): build and usage instructions, architecture diagram
+- [src/main.cpp](https://github.com/ImSavsis/ttl-probe/blob/master/src/main.cpp): ICMP packet construction and hop-by-hop probing loop
+
+## Notes
+
+- Originally scoped as a same-connection TTL "fake packet" DPI bypass trick, but that needs raw TCP packet injection which Windows blocks without a driver like WinDivert — this is the honest, working substitute
