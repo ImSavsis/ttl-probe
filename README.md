@@ -1,5 +1,8 @@
 # ttl-probe
 
+[![CI](https://github.com/ImSavsis/ttl-probe/actions/workflows/ci.yml/badge.svg)](https://github.com/ImSavsis/ttl-probe/actions/workflows/ci.yml)
+[![license](https://img.shields.io/github/license/ImSavsis/ttl-probe.svg)](https://github.com/ImSavsis/ttl-probe/blob/master/LICENSE)
+
 свой traceroute на C++ через сырые ICMP-сокеты. шлёт echo-запросы с растущим TTL и смотрит кто отвечает "time exceeded" на каждом хопе.
 
 ```mermaid
